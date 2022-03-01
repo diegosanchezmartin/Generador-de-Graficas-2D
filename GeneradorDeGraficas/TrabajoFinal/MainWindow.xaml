@@ -1,0 +1,52 @@
+﻿<Window x:Class="TrabajoFinal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrabajoFinal"
+        mc:Ignorable="d"
+        Title="Ventana portada" Height="450" Width="700">
+    <Window.Background>
+        <ImageBrush x:Name="imagenDeFondo" ImageSource="fotoPortada.png"/>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Name="introduccion" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="8">
+            Aplicación Interfaces Gráficas de Usuario 3º Ingeniería Informática 2020-2021
+        </Label>
+        <Label Name="generadorDeGraficas" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="8" FontSize="40" VerticalAlignment="Center">
+            Generador de Gráficas
+        </Label>
+        <Label Name="descripcion" Grid.Row="2" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="8">
+            <TextBlock Margin="5" FontSize="10" VerticalAlignment="Center" HorizontalAlignment="Left">
+                Generador de Gráficas creado por Diego Sánchez Martín<LineBreak/>
+                Crea tu gráfica añadiendo los puntos necesarios<LineBreak/>
+                Añade, borra y modifica los puntos de tú gráfica<LineBreak/>
+                ¿A qué esperas?
+            </TextBlock>
+        </Label>
+        <Button Name="botonGenerar" FontFamily="Ink Free" FontSize="20" Background="Lavender" Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="2" Click="botonEmpezar">
+            Empezar
+        </Button>
+    </Grid>
+</Window>
